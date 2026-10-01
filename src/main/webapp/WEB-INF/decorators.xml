@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/views/decorators">
+    <excludes>
+        <pattern>/static/*</pattern>
+        <pattern>/assets/*</pattern>
+    </excludes>
+
+    <!-- Decorator dành cho vai trò Quản trị viên (Admin) -->
+    <decorator name="admin" page="admin.jsp">
+        <pattern>/admin*</pattern>
+    </decorator>
+
+    <!-- Decorator dành cho vai trò Người dùng (User / Khách) -->
+    <decorator name="web" page="web.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+</decorators>
